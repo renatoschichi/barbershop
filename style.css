@@ -168,14 +168,14 @@ a {
 }
 
 .rb-button {
-  color: rgb(8, 8, 8);
+  color: #212121;
   border: 2px solid rgb(247, 146, 52);
-  border-radius: 10px;
+  border-radius: 30px;
   background-color: rgb(247, 146, 52);
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   display: flex;
-  padding: 10px;
+  padding: 16px;
   text-align: center;
   margin: 0 auto;
   z-index: 2;
@@ -184,51 +184,22 @@ a {
 }
 
 .rb-button:hover {
-  color: white;
-  border: 2px solid rgb(247, 146, 52);
-  border-radius: 10px;
-  background-color: rgb(247, 146, 52);
-  font-size: 24px;
-  font-weight: 600;
-  display: flex;
-  padding: 10px;
-  text-align: center;
-  margin: 0 auto;
-  z-index: 2;
-  position: relative;
-  top: 60%;
-}
-
-.rb-button:active {
-  color: rgb(8, 8, 8);
-  border: 2px solid rgb(247, 146, 52);
-  border-radius: 10px;
-  background-color: rgb(247, 146, 52);
-  font-size: 22px;
-  font-weight: 600;
-  display: flex;
-  padding: 10px;
-  text-align: center;
-  margin: 0 auto;
-  z-index: 2;
-  position: relative;
-  top: 60%;
+  background-color: rgb(255, 136, 24);
 }
 
 .rb-div {
-  background-color: rgb(247, 146, 52);
-  text-align: center;
-  padding: 30px;
+  background-color: #2c2c2c;
+  display: flex;
+  padding: 50px 0;
 }
 
-.rb-div h3 {
-  font-size: 30px;
-  margin-bottom: 20px;
+.rb-div > div {
+  flex: 1;
 }
 
-.rb-div p {
-  font-size: 20px;
-  margin-bottom: 20px;
+.aboutus-img {
+  width: 280px;
+  height: 450px;
 }
 
 .aboutus-div {
@@ -244,26 +215,121 @@ h2 {
   font-size: 20px;
 }
 
-hr {
-  margin: 20px 0px 40px 0px;
-  width: 100%;
-  border-style: solid;
-  border-color: rgb(8, 8, 8);
-  border-width: 10 0 10px 0;
-  border-radius: 20px;
-  display: block;
+.aboutus-hr-left {
+  margin: 20px 0px 40px 150px;
+  background-color: #9C9F9F;
+  height: 6px;
+  border-radius: 30px;
+  width: 100px;
+  border: none;
+}
+
+.aboutus-left-column h3 {
+  font-size: 30px;
+  margin: 50px 0 0 150px;
+  color: rgb(247, 146, 52);
+}
+
+.aboutus-left-column p {
+  color: #fff;
+  font-family: Gotham;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  margin: 0 0 35px 150px;
+  padding-right: 20px;
+}
+
+.aboutus-hr-right {
+  margin: 40px 0px;
+  background-color: rgb(247, 146, 52);
+  border: none;
+  height: 6px;
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .rb-div {
+    flex-direction: column;
+    padding: 30px 0;
+  }
+
+  .rb-div h3   {
+    text-align: center;
+  }
+
+  .aboutus-hr-left {
+    margin: 30px auto !important;
+  }
+
+  .aboutus-img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .aboutus-hr-left,
+  .aboutus-hr-right {
+    margin: 20px 0;
+  }
+
+  .aboutus-left-column h3,
+  .aboutus-left-column p {
+    margin: 0 15px;
+    padding-right: 0px !important;
+  }
+
+  .btn-service {
+    margin: 20px auto;
+    font-size: 16px !important;
+    padding: 12px !important;
+  }
 }
 
 .rb-services {
   background-color: rgb(8, 8, 8);
+  padding: 50px 0;
+}
+
+.services-container {
+  background-color: rgb(8, 8, 8);
+  overflow: hidden;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.services-container h3 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: rgb(247, 146, 52);
+}
+
+.services-container hr {
+  width: 60px;
+  background-color: #9C9F9F;
+  height: 6px;
+  border: none;
+  border-radius: 6px;
+  margin: 0 auto;
+}
+
+.services-container p {
+  color: #fff;
+  font-family: Gotham;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  max-width: 900px;
   padding: 10px;
 }
 
-.rb-services h3 {
-  font-size: 30px;
-  margin: 30px 0px 30px 0px;
-  text-align: center;
-  color: rgb(247, 146, 52);
+.service-card {
+  width: 50px;
 }
 
 .main {
@@ -311,51 +377,22 @@ img {
 }
 
 .btn-service {
-  color: rgb(8, 8, 8);
+  color: #ffffff;
   border: 2px solid rgb(247, 146, 52);
   border-radius: 10px;
-  background-color: rgb(247, 146, 52);
-  font-size: 22px;
-  font-weight: 600;
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: Gotham;
   display: flex;
-  padding: 10px;
+  padding: 16px;
   text-align: center;
-  margin: 0 auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  z-index: 2;
+  margin-left: 30px;
 }
 
 .btn-service:hover {
-  color: rgb(8, 8, 8);
   border: 2px solid rgb(247, 146, 52);
-  border-radius: 10px;
   background-color: rgb(247, 146, 52);
-  font-size: 22px;
-  font-weight: 600;
-  display: flex;
-  padding: 10px;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  z-index: 2;
-}
-
-.btn-service:active {
-  color: rgb(8, 8, 8);
-  border: 2px solid rgb(247, 146, 52);
-  border-radius: 10px;
-  background-color: rgb(247, 146, 52);
-  font-size: 22px;
-  font-weight: 600;
-  display: flex;
-  padding: 10px;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  z-index: 2;
 }
 
 .localization {
@@ -363,7 +400,6 @@ img {
   text-align: center;
   font-size: 22px;
   padding: 20px;
-  margin-bottom: 50px;
 }
 
 .localization h3 {
@@ -541,4 +577,9 @@ img {
   margin: 0 auto;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
+}
+
+.footer-company-name {
+  color: #fff;
 }

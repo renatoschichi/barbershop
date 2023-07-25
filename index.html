@@ -15,7 +15,8 @@
   <section id="start">
     <div class="container">
       <nav class="navbar">
-        <a href="index.html" class="a-img"><img src="assets/img/logo.png" class="nav-logo" id="logo" alt="Logo Barbearia RB" />
+        <a href="index.html" class="a-img"><img src="assets/img/logo.png" class="nav-logo" id="logo"
+            alt="Logo Barbearia RB" />
         </a>
         <ul class="nav-menu">
           <li class="nav-item">
@@ -25,7 +26,7 @@
             <a href="#aboutus" class="nav-link">Sobre Nós</a>
           </li>
           <li class="nav-item">
-            <a href="#services" class="nav-link">Serviços</a>
+            <a href="#mural" class="nav-link">Serviços</a>
           </li>
           <li class="nav-item">
             <a href="#localization" class="nav-link">Localização</a>
@@ -38,61 +39,71 @@
         </div>
         <div class="rb-logo-images">
           <div class="logo-container">
-            <img src="assets/img/facebook.png" class="nav-logo-social-media facebook" alt="Facebook logo" onClick="openFacebook()" />
-            <img src="assets/img/instagram.png" class="nav-logo-social-media instagram" alt="Instagram logo" onClick="openInstagram()" />
+            <img src="assets/img/facebook.png" class="nav-logo-social-media facebook" alt="Facebook logo"
+              onClick="openFacebook()" />
+            <img src="assets/img/instagram.png" class="nav-logo-social-media instagram" alt="Instagram logo"
+              onClick="openInstagram()" />
           </div>
-        </div>        
+        </div>
       </nav>
-      <!--     <button class="rb-button" onClick="setDateAndTime()">
+      <button class="rb-button" onClick="setDateAndTime()">
         Agendar um horário
-      </button> -->
+      </button>
     </div>
   </section>
 
   <section id="aboutus">
     <div class="rb-div">
-      <h3>Sobre nós</h3>
-      <p>
-        O RB STUDIO BARBEARIA adota o conceito de “barbearia premium”, que
-        atende as demandas do homem moderno e transforma o simples ato de
-        fazer a barba ou cortar o cabelo, em uma experiência de lazer e
-        confraternização desde que foi criada outubro de 2017. Atualmente,
-        possui um trabalho focado em estética masculina. Nosso espaço contém
-        mordomias como TV, ambiente climatizado e um expositor refrigerado
-        para bebidas. Ficamos em São Vicente/SP e estamos prontos para te
-        atender. Agende um horário agora mesmo e venha nos conhecer.
-      </p>
-      <hr />
-      <div class="card aboutus-div">
-        <h2>Missão</h2>
-        <p class="aboutus-text">
-          Promover bem-estar, auto estima e resgatar sorrisos através do nosso
-          atendimento e relacionamento.
+      <div class="aboutus-left-column">
+        <h3>Sobre nós</h3>
+        <hr class="aboutus-hr-left" />
+        <p>
+          &nbsp O RB Studio Barbearia é uma barbearia premium que oferece uma experiência de lazer e confraternização
+          desde
+          sua criação em 2017. Atendemos a estética masculina em São Vicente/SP com TV, ambiente climatizado e bebidas
+          refrigeradas. Agende um horário agora mesmo e venha nos conhecer. Nosso objetivo é promover bem-estar,
+          autoestima e resgatar sorrisos através do nosso atendimento e relacionamento, entregando excelência e inovação
+          por um valor justo, tornando-nos referência na Baixada Santista.
         </p>
+        <button class="btn-service" onClick="setDateAndTime()" style="margin-left: 150px;">RESERVE AGORA</button>
       </div>
-
-      <div class="card aboutus-div">
-        <h2>Visão</h2>
-        <p class="aboutus-text">
-          Entregar excelência e inovação elevando a qualidade de serviços na
-          região, por um valor justo. Tornando-se referência na baixada
-          santista.
-        </p>
-      </div>
-
-      <div class="card aboutus-div">
-        <h2>Valores</h2>
-        <p class="aboutus-text">
-          Respeito, reciprocidade e comprometimento regem a nossa empresa.
-          Transbordamos aquilo que nos move para os nossos clientes.
-        </p>
+      <div class="aboutus-right-column">
+        <img src="assets/img/rafael-black.jpg" alt="RB Studio Barber foto" class="aboutus-img"
+          style="padding-right: 20px">
+        <img src="assets/img/rb-studio-panel.png" alt="RB Studio Barber foto" class="aboutus-img">
+        <hr class="aboutus-hr-right" />
       </div>
     </div>
   </section>
 
-  <section id="services">
+<!--   <section id="services">
+    <div class="services-container">
+      <h3>Serviços</h3>
+      <hr />
+      <p style="padding-top: 30px;">
+        Descubra uma experiência exclusiva em um espaço aconchegante com os melhores especialistas em estética
+        masculina. Estilo clássico para Barba e Cabelo, com toque moderno essencial.
+      </p>
+      <p>
+        Além dos cortes e cuidados com a barba, oferecemos tonalização, descoloração, progressiva, hidratação capilar e
+        muitos outros procedimentos exclusivos para projetar a imagem de sucesso que você deseja. Confie em nossos
+        profissionais para realçar sua beleza e autoestima com serviços personalizados e de alta qualidade. Aproveite o
+        poder de transformação em nosso espaço dedicado ao bem-estar masculino.
+      </p>
+      <div class="services-container-images">
+
+        <div class="service-card">
+          <img src="assets/img/10.jpg" alt="Rafael Black Barbearia">
+          <h5>Hidração</h5>
+          <button class="btn-service">RESERVE AGORA</button>
+        </div>
+
+      </div>
+    </div>
+  </section> -->
+
+  <section id="mural">
     <div class="rb-services">
-      <h3>Conheça nosso trabalho</h3>
       <div class="main">
         <ul class="cards">
           <li class="cards-item">
@@ -143,7 +154,7 @@
         </ul>
       </div>
 
-      <button class="btn-service" onClick="setDateAndTime()">
+      <button class="btn-service" onClick="setDateAndTime()" style="margin: 0 auto !important;">
         Clique aqui e conheça todos os nossos serviços
       </button>
     </div>
@@ -167,12 +178,12 @@
 
         <a href="#aboutus">Sobre nós</a>
 
-        <a href="#services">Serviços</a>
+        <a href="#mural">Serviços</a>
 
         <a href="#localization">Localização</a>
       </p>
 
-      <p class="footer-company-name">RB STUDIO BARBEARIA © 2021</p>
+      <p class="footer-company-name">RB STUDIO BARBEARIA © 2023</p>
     </div>
 
     <div class="footer-center">
