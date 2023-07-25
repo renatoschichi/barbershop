@@ -20,3 +20,15 @@ function setDateAndTime() {
     "https://booksy.com/pt-br/29857_rb-studio-barber_barba_1011594_sao-vicente"
   );
 }
+
+function openFacebook() {
+  window.open(
+    "https://www.facebook.com/rbstudiobarber"
+  );
+}
+
+function openInstagram() {
+  window.open(
+    "https://www.instagram.com/rbstudiobarber"
+  );
+}
