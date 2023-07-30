@@ -32,3 +32,43 @@ function openInstagram() {
     "https://www.instagram.com/rbstudiobarber"
   );
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const carousel = document.querySelector(".cards");
+  const prevBtn = document.querySelector(".prev-btn");
+  const nextBtn = document.querySelector(".next-btn");
+  const progressBar = document.querySelector(".progress-bar");
+
+  const cardWidth = document.querySelector(".card").offsetWidth;
+  const totalCards = document.querySelectorAll(".card").length;
+  const carouselWidth = cardWidth * totalCards;
+  let currentPosition = 0;
+
+  carousel.style.width = carouselWidth + "px";
+
+  function updateProgressBar() {
+    const progress = (currentPosition / (totalCards - 1)) * 100;
+    progressBar.style.transform = `scaleX(${progress / 100})`;
+  }
+
+  function moveToCard(cardIndex) {
+    currentPosition = cardIndex;
+    const offset = -currentPosition * cardWidth;
+    carousel.style.transform = `translateX(${offset}px)`;
+    updateProgressBar();
+  }
+
+  prevBtn.addEventListener("click", function () {
+    if (currentPosition > 0) {
+      currentPosition--;
+      moveToCard(currentPosition);
+    }
+  });
+
+  nextBtn.addEventListener("click", function () {
+    if (currentPosition < totalCards - 1) {
+      currentPosition++;
+      moveToCard(currentPosition);
+    }
+  });
+});
